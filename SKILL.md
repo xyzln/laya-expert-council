@@ -1,5 +1,7 @@
 ---
 name: laya-expert-council
+slug: laya-expert-council
+displayName: Laya决策专家团
 version: 1.0.0
 author: xyzln
 description: >-
