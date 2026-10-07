@@ -1,0 +1,17 @@
+{
+  "state_key": "file_op",
+  "questions": {
+    "modifies_sensitive_file": {
+      "type": "noul",
+      "instructions": "是否写入或覆盖敏感文件（.env、密钥/证书 *.pem/*.key/id_rsa、/etc、/root/.ssh、.git、.codebuddy 等）？"
+    },
+    "outside_workspace": {
+      "type": "noul",
+      "instructions": "操作是否落点在当前项目工作区之外（系统目录、全局配置、远端、用户家目录敏感位置）？"
+    },
+    "is_destructive_overwrite": {
+      "type": "noul",
+      "instructions": "是否以覆盖方式写入（可能丢失既有内容），而非追加或新建？"
+    }
+  }
+}
