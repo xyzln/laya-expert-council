@@ -1,0 +1,24 @@
+{
+  "skill_id": "laya-expert-council",
+  "name": "Laya决策专家团",
+  "version": "1.0.0",
+  "author": "xyzln",
+  "description": "自包含 System-1 决策协议（复刻 Laya 原理，零外部依赖、零联网），以「决策中枢 + 5 领域专家」专家团形式运行，并作为 WorkBuddy 原生安全网关：在 Bash/Write/Edit/WebFetch 执行前由 PreToolUse 钩子做风险判定，灾难性指令直接拦截(deny)、高危操作转人工确认(ask)。专家团覆盖安全合规、代码评审、运维SRE、需求分诊、测试质量五大维度，针对固定题型给出校准式置信度，低置信自动弃权升级。适用于命令风险、代码评审、运维变更、需求分诊、发布质量等「先决策后行动」的场景。",
+  "category": "安全与效率",
+  "tags": ["决策引擎", "安全网关", "专家团", "风险评估", "代码评审", "运维SRE", "需求分诊"],
+  "permissions": [
+    "读取本地文件与项目结构",
+    "执行内置 Python 脚本（纯标准库，无联网）",
+    "向 ~/.codebuddy/settings.json 合并 PreToolUse 安全钩子",
+    "部署专家子技能到 ~/.codebuddy/skills"
+  ],
+  "icon": "icon.png",
+  "homepage": "https://github.com/xyzln/laya-expert-council",
+  "triggers_preview": [
+    "评估这个命令该不该执行",
+    "帮我对这次代码改动做专家评审",
+    "这个运维操作有风险吗",
+    "工单该分给谁、紧不紧急",
+    "发布前帮我过一遍质量闸门"
+  ]
+}
